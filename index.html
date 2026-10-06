@@ -1,0 +1,34 @@
+<!-- صفحه ۱ -->
+<div id="page1">
+    <h1 style="text-align: center;">جدید‌ترین نسخه</h1>
+
+    <div style="text-align: center;">
+        <button onclick="showPage2()" style="background-color: #55FF33; color: black;">
+            Download
+        </button>
+    </div>
+</div>
+
+<!-- صفحه ۲ -->
+<div id="page2" style="display: none;">
+    <h1 style="font-size: 12px;">
+        برای دیدن نسخه برنامه به تنظیمات کلاغ‌یار بروید و از پایین صفحه ورژن برنامه را مشاهده کنید
+    </h1>
+
+    <div style="text-align: center;">
+        <a href="KY.apk" download>
+            <button style="background-color: #55FF33; color: black;">
+                دانلود
+            </button>
+        </a>
+    </div>
+
+    <span style="font-size: 10px;">ورژن: v0.0.X</span>
+</div>
+
+<script>
+function showPage2() {
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "block";
+}
+</script>
