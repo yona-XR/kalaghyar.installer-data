@@ -1,34 +1,53 @@
-<!-- صفحه ۱ -->
-<div id="page1">
-    <h1 style="text-align: center;">جدید‌ترین نسخه</h1>
 
-    <div style="text-align: center;">
-        <button onclick="showPage2()" style="background-color: #55FF33; color: black;">
-            Download
-        </button>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>آخرین نسخه</title>
 
-<!-- صفحه ۲ -->
-<div id="page2" style="display: none;">
-    <h1 style="font-size: 12px;">
-        برای دیدن نسخه برنامه به تنظیمات کلاغ‌یار بروید و از پایین صفحه ورژن برنامه را مشاهده کنید
-    </h1>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      text-align: center;
+      background: #f4f6f8;
+      padding: 40px 10px;
+    }
 
-    <div style="text-align: center;">
-        <a href="KY.apk" download>
-            <button style="background-color: #55FF33; color: black;">
-                دانلود
-            </button>
-        </a>
-    </div>
+    .update {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 350px;
+      margin: auto;
+      box-shadow: 0 4px 12px #0001;
+    }
 
-    <span style="font-size: 10px;">ورژن: v0.0.X</span>
-</div>
+    h3 {
+      color: #222;
+    }
 
-<script>
-function showPage2() {
-    document.getElementById("page1").style.display = "none";
-    document.getElementById("page2").style.display = "block";
-}
-</script>
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 22px;
+      background: #1687ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    a:hover {
+      background: #0069d9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="update">
+    <h3>جدیدترین نسخه: 1.6</h3>
+    <a href="https://www.google.com">دانلود این نسخه</a>
+  </div>
+
+</body>
+</html>
